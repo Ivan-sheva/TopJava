@@ -4,19 +4,20 @@ public class Cycle {
             System.out.println(i);
         }
 
-        int count1 = 6;
-        while (count1 > -6) {
-            count1=count1-2;
-            System.out.println(count1);
-
+        int counter = 6;
+        while (counter > -6) {
+            counter = counter - 2;
+            System.out.println(counter);
         }
 
-        int count2 = 10;
+        counter = 10;
+        int sortNumbersSum = 0;
         do {
-            count2++;
-            if (count2 % 2 != 0) {
-                System.out.println(count2);
+            counter++;
+            if (counter % 2 != 0) {
+                sortNumbersSum += counter;
             }
-        } while (count2 < 20);
+        } while (counter < 20);
+        System.out.println(sortNumbersSum);
     }
 }
