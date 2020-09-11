@@ -13,7 +13,7 @@ public class Calculator {
         } else if (arithmeticOperation == '/') {
             System.out.println(a / b);
         } else if (arithmeticOperation == '^') {
-            System.out.println("Число a в степени b = " + (Math.pow(a, b)));
+            System.out.println("Число a в степени b = " + (a*a));
         } else if (arithmeticOperation == '%') {
             System.out.println(a % b);
         }
