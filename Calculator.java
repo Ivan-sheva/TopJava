@@ -1,25 +1,20 @@
 public class Calculator {
     public static void main(String[] args) {
-        int a = 11;
-        int b = 23;
-        char plus = '+';
-        char minus = '-';
-        char multiplication = '*';
-        char division = '/';
-        char exponentiating = '^';
-        char remainder = '%';
+        int a = 4;
+        int b = 2;
+        char arithmeticOperation = '/';
 
-        if (plus == '+') {
+        if (arithmeticOperation == '+') {
             System.out.println(a + b);
-        } else if (minus == '-') {
+        } else if (arithmeticOperation == '-') {
             System.out.println(a - b);
-        } else if (multiplication == '*') {
+        } else if (arithmeticOperation == '*') {
             System.out.println(a * b);
-        } else if (division == '/') {
+        } else if (arithmeticOperation == '/') {
             System.out.println(a / b);
-        } else if (exponentiating == '^') {
-            System.out.println("Число a в степени = " + (a * a) + " Число b в степени = " + (b * b));
-        } else if (remainder == '%') {
+        } else if (arithmeticOperation == '^') {
+            System.out.println("Число a в степени b = " + (Math.pow(a, b)));
+        } else if (arithmeticOperation == '%') {
             System.out.println(a % b);
         }
     }
