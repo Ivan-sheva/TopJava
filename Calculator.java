@@ -2,7 +2,7 @@ public class Calculator {
     public static void main(String[] args) {
         int a = 4;
         int b = 2;
-        char arithmeticOperation = '/';
+        char arithmeticOperation = '^';
 
         if (arithmeticOperation == '+') {
             System.out.println(a + b);
@@ -13,7 +13,11 @@ public class Calculator {
         } else if (arithmeticOperation == '/') {
             System.out.println(a / b);
         } else if (arithmeticOperation == '^') {
-            System.out.println("Число a в степени b = " + (a*a));
+            int c = 1;
+            for (int i = 0; i < b; i++) {
+                c = c * a;
+            }
+            System.out.println(c);
         } else if (arithmeticOperation == '%') {
             System.out.println(a % b);
         }
